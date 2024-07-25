@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etymology Finder</title>
+    <title>Tell me a story</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Etymology Finder</h1>
+<body style="height: 100vh;">
+    <div class="container" style="max-height: 100%; overflow-y: scroll">
+        <h1>Tell Me A Story</h1>
         <input type="text" id="wordInput" placeholder="Enter a word">
         <button id="searchButton">Search</button>
         <div id="resultSection">
             <h2>Etymology:</h2>
-            <p id="definition"></p>
+            <img src="" alt="visual novel image" id="blah" style="height: 400px;">
+            <p id="definition" style="height: 700px; overflow-y: scroll"></p>
         </div>
     </div>
     <script src="script.js"></script>

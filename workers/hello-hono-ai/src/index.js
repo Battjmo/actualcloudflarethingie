@@ -5,6 +5,7 @@ import { events } from 'fetch-event-stream';
 const app = new Hono();
 
 app.get('/', async (c) => {
+	console.log('hi');
 	const msg = c.req.query('msg') || 'I am so going to win';
 	const result = await c.env.AI.run('@cf/meta/llama-3-8b-instruct', {
 		messages: [
